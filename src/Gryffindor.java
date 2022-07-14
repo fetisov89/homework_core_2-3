@@ -48,8 +48,10 @@ public class Gryffindor extends Hogwarts{
     public void comparisonFaculty(Gryffindor object) {
         if (object.bravery + object.honor + object.nobility < this.bravery + this.honor + this.nobility) {
             System.out.println(getName() + " лучший гриффиндорец чем " + object.getName());
-        } else {
+        } else if (object.bravery + object.honor + object.nobility > this.bravery + this.honor + this.nobility) {
             System.out.println(object.getName() + " лучший гриффиндорец чем " + getName());
+        } else {
+            System.out.println("Ученики равны");
         }
     }
 

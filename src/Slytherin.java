@@ -68,6 +68,16 @@ public class Slytherin extends  Hogwarts{
         System.out.println("lustForPower = " + lustForPower);
     }
 
+    public void comparisonFaculty(Slytherin object) {
+        if (object.ambition + object.determination + object.lustForPower + object.resourcefulness + object.theTrick > this.ambition + this.determination + this.lustForPower + this.resourcefulness + this.theTrick) {
+            System.out.println(getName() + " лучший слизеринец, чем " + object.getName());
+        } else if (object.ambition + object.determination + object.lustForPower + object.resourcefulness + object.theTrick < this.ambition + this.determination + this.lustForPower + this.resourcefulness + this.theTrick) {
+            System.out.println(object.getName() + " лучший слизеринец, чем " + getName());
+        } else {
+            System.out.println("Ученики равны");
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

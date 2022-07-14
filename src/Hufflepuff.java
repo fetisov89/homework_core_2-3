@@ -38,6 +38,16 @@ public class Hufflepuff extends  Hogwarts{
         this.honesty = honesty;
     }
 
+    public void comparisonFaculty(Hufflepuff object) {
+        if (object.hardworking + object.honesty + object.loyalty > this.hardworking + this.honesty + this.loyalty) {
+            System.out.println(getName() + " лучший как-то там его, чем " + object.getName());
+        } else if (object.hardworking + object.honesty + object.loyalty < this.hardworking + this.honesty + this.loyalty) {
+            System.out.println(object.getName() + " лучший как-то там его, чем " + getName());
+        } else {
+            System.out.println("Ученики равны");
+        }
+    }
+
     public void print() {
         super.print();
         System.out.println("hardworking = " + hardworking);

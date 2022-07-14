@@ -48,6 +48,16 @@ public class Ravenclaw extends Hogwarts {
         this.creativity = creativity;
     }
 
+    public void comparisonFaculty(Ravenclaw object) {
+        if (object.creativity + object.mind + object.wisdom + object.wit > object.wit + object.mind + object.wisdom + object.creativity) {
+            System.out.println(getName() + " лучший как-то там его, чем " + object.getName());
+        } else if (object.creativity + object.mind + object.wisdom + object.wit < object.wit + object.mind + object.wisdom + object.creativity) {
+            System.out.println(object.getName() + " лучший как-то там его, чем " + getName());
+        } else {
+            System.out.println("Ученики равны");
+        }
+    }
+
     public void print() {
         super.print();
         System.out.println("mind = " + mind);
